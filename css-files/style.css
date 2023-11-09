@@ -126,6 +126,19 @@ a:hover {
   #check:checked ~ ul {
     left: 0;
   }
+  .logo-container {
+    order: -1;
+  }
+  label.logo {
+    padding: 0;
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 520px) {
+  label.logo {
+    font-size: 25px;
+  }
 }
 
 .link {
