@@ -24,6 +24,7 @@ h2 {
   font-weight: 400;
   font-size: 20px;
   color: black;
+  font-weight: bold;
   line-height: 1.5;
 }
 
@@ -31,7 +32,6 @@ h3 {
   font-family: "Poppins", sans-serif, "arial";
   font-weight: 400;
   font-size: 20px;
-  font-weight: bold;
   color: black;
   line-height: 1.5;
 }
@@ -161,9 +161,15 @@ a:hover {
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 550px) {
   label.logo {
-    font-size: 25px;
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 300px) {
+  label.logo {
+    font-size: 15px;
   }
 }
 

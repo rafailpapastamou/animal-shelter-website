@@ -1,5 +1,6 @@
 form {
   max-width: 100%;
+  font-family: "Poppins", sans-serif, "arial";
 }
 
 .feedback-input {
@@ -60,7 +61,7 @@ textarea {
 }
 
 .contact-text {
-  font: 300 18px "Poppins", sans-serif, "arial";
+  font: 300 16px "Poppins", sans-serif, "arial";
   letter-spacing: 1.9px;
   color: #bbb;
 }
@@ -91,4 +92,31 @@ textarea {
 
 .error-message {
   color: red;
+}
+
+@media (max-width: 350px) {
+  .a {
+    font-size: 5px;
+  }
+
+  .contact-text {
+    font: 300 12px "Poppins", sans-serif, "arial";
+    letter-spacing: 1.9px;
+  }
+
+  .fa {
+    font-size: 1em;
+  }
+
+  .place {
+    margin-left: 22px;
+  }
+
+  .phone {
+    margin-left: 16px;
+  }
+
+  .gmail {
+    margin-left: 13px;
+  }
 }
