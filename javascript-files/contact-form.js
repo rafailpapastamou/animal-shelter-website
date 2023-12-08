@@ -55,7 +55,7 @@ function validateForm(event) {
 
     // Check if name is empty or contains numbers
     if (name == "") {
-        showError(document.forms["contactForm"]["name"], "Εισαγάγετε ονοματεπώνυμο.", "nameError");
+        showError(document.forms["contactForm"]["name"], "Εισάγετε ονοματεπώνυμο.", "nameError");
         return false;
     } else if (!/^[a-zA-Zα-ωΑ-Ω\s]+$/.test(name)) {
         showError(document.forms["contactForm"]["name"], "Εισάγετε έγκυρο ονοματεπώνυμο.", "nameError");
@@ -68,10 +68,10 @@ function validateForm(event) {
     // Check if email is a valid email address
     var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (email == "") {
-        showError(document.forms["contactForm"]["email"], "Εισαγάγετε μια διεύθυνση email.", "emailError");
+        showError(document.forms["contactForm"]["email"], "Εισάγετε μια διεύθυνση email.", "emailError");
         return false;
     } else if(!emailRegex.test(email)){
-        showError(document.forms["contactForm"]["email"], "Εισαγάγετε μια έγκυρη διεύθυνση email.", "emailError");
+        showError(document.forms["contactForm"]["email"], "Εισάγετε μια έγκυρη διεύθυνση email.", "emailError");
         return false;
     }
 
