@@ -1,0 +1,39 @@
+.info {
+  background-color: #94c970;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.info p {
+  color: white;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif, "arial";
+}
+
+.cat-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cat-info p {
+  color: #fff;
+  font-size: 18px;
+  width: 45%;
+}
+
+.cat-info img {
+  width: 45%;
+  border-radius: 8px;
+}
+
+.info img {
+  border: 5px solid white;
+}
+
+.info h1 {
+  color: white;
+}
