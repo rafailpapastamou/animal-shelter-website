@@ -95,6 +95,10 @@ textarea {
 }
 
 @media (max-width: 350px) {
+  body h3 {
+    font-size: 15px;
+  }
+
   .a {
     font-size: 5px;
   }

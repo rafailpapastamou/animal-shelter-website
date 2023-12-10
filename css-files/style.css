@@ -51,3 +51,13 @@ h3 {
   transition: 0s;
   text-decoration: none;
 }
+
+@media only screen and (max-width: 550px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+}

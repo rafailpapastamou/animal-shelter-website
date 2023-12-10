@@ -7,33 +7,51 @@
   text-align: center;
 }
 
-.info p {
+.info p,
+.info h1 {
   color: white;
   font-weight: bold;
   font-family: "Poppins", sans-serif, "arial";
 }
 
-.cat-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.animal-image {
+  width: 160px;
+  margin: 5px;
 }
 
-.cat-info p {
-  color: #fff;
-  font-size: 18px;
-  width: 45%;
+.gotAdoptedCountText {
+  font-size: 24px;
+  text-align: center;
 }
 
-.cat-info img {
-  width: 45%;
-  border-radius: 8px;
+h2.animalShelterInfoText {
+  font-size: 20px;
 }
 
-.info img {
-  border: 5px solid white;
+@media screen and (max-width: 1103px) {
+  .gotAdoptedCountText {
+    font-size: 22px;
+  }
+
+  h2.animalShelterInfoText {
+    font-size: 18px;
+  }
+
+  .animal-image {
+    width: 100px;
+  }
 }
 
-.info h1 {
-  color: white;
+@media screen and (max-width: 654px) {
+  .gotAdoptedCountText {
+    font-size: 15px;
+  }
+
+  h2.animalShelterInfoText {
+    font-size: 15px;
+  }
+
+  .animal-image {
+    width: 50px;
+  }
 }
