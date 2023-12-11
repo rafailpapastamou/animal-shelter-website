@@ -17,27 +17,27 @@ This university project, part of the 'Databases' course, involves creating a dat
 The homepage of the website
 
 <div style="display: flex; justify-content: space-between;">
-  <img src="https://github.com/rafailpapastamou/animal-shelter-website/blob/main/screenshots/index.jpg" width="90%">
+  <img src="https://github.com/rafailpapastamou/animal-shelter-website/blob/main/screenshots/Index.jpg" width="100%">
 </div>
 <br>
 The page where animals up for adoption are shown
 <div style="display: flex; justify-content: space-between;">
-  <img src="" width="90%">
+  <img src="" width="100%">
 </div>
 <br>
 The page where the user can apply for an adoption, creating an adoption request
 <div style="display: flex; justify-content: space-between;">
-  <img src="" width="90%">
+  <img src="" width="100%">
 </div>
 <br>
 The information page, showing the project team<br>
 <div style="display: flex; justify-content: space-between;">
-  <img src="https://github.com/rafailpapastamou/animal-shelter-website/blob/main/screenshots/info.jpg" width="90%">
+  <img src="https://github.com/rafailpapastamou/animal-shelter-website/blob/main/screenshots/info.jpg" width="100%">
 </div>
 <br>
 The contact page, where the user can send a message to the animal shelter<br>
 <div style="display: flex; justify-content: space-between;">
-  <img src="https://github.com/rafailpapastamou/animal-shelter-website/blob/main/screenshots/contact.jpg" width="90%">
+  <img src="https://github.com/rafailpapastamou/animal-shelter-website/blob/main/screenshots/contact.jpg" width="100%">
 </div>
 
 ### Website Link
