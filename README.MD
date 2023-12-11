@@ -46,9 +46,9 @@ You can visit the website [here](https://dblab.nonrelevant.net/~lab2324omada2/ht
 
 ## Database Diagrams and Code
 
-Database diagrams are available [here](https://github.com/rafailpapastamou/animal-shelter-website/sql/sql-diagrams)
+Database diagrams are available [here](https://github.com/rafailpapastamou/animal-shelter-website/tree/main/sql/sql-diagrams)
 <br>
-The Database code is available [here](https://github.com/rafailpapastamou/animal-shelter-website/sql/sql-code.txt)
+The Database code is available [here](https://github.com/rafailpapastamou/animal-shelter-website/blob/main/sql/sql-code.sql)
 
 ## Technologies Used
 
