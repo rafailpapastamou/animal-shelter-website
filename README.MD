@@ -40,11 +40,11 @@ The contact page, where the user can send a message to the animal shelter<br>
   <img src="https://github.com/rafailpapastamou/animal-shelter-website/blob/main/screenshots/contact.jpg" width="100%">
 </div>
 
-### Website Link
+## Website Link
 
 You can visit the website [here](https://dblab.nonrelevant.net/~lab2324omada2/html-files/user/index.php), hosted on the university server.
 
-### Database Diagrams and Code
+## Database Diagrams and Code
 
 Database diagrams are available [here](https://github.com/rafailpapastamou/animal-shelter-website/sql/sql-diagrams)
 <br>
