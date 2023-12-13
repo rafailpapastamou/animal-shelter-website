@@ -55,15 +55,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Check if name is empty or contains numbers
     if (name == "") {
-        showError(document.forms["contactForm"]["name"], "Εισάγετε ονοματεπώνυμο.", "nameError");
-        return false;
-    } else if (!/^[a-zA-Zα-ωΑ-Ω\s]+$/.test(name)) {
-        showError(document.forms["contactForm"]["name"], "Εισάγετε έγκυρο ονοματεπώνυμο.", "nameError");
-        return false;    
-    } else if (name.length < 5) {
-        showError(document.forms["contactForm"]["name"], "Το ονοματεπώνυμο πρέπει να έχει τουλάχιστον 5 χαρακτήρες.", "nameError");
-        return false;
-    }
+      showError(document.forms["contactForm"]["name"], "Εισάγετε ονοματεπώνυμο.", "nameError");
+      return false;
+  } else if (!/^[a-zA-Zα-ωΑ-ΩάέήίύϋΐόώΆΈΉΊΎΪΌΏ\s]+$/.test(name)) {
+      showError(document.forms["contactForm"]["name"], "Εισάγετε έγκυρο ονοματεπώνυμο.", "nameError");
+      return false;    
+  } else if (name.length < 5) {
+      showError(document.forms["contactForm"]["name"], "Το ονοματεπώνυμο πρέπει να έχει τουλάχιστον 5 χαρακτήρες.", "nameError");
+      return false;
+  }
+  
 
     // Check if email is a valid email address
     var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;

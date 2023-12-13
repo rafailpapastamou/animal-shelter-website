@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (name == "") {
         showError(document.forms["adoptionForm"]["name"], "Εισάγετε όνομα.", "nameError");
         return false;
-    } else if (!/^[a-zA-Zα-ωΑ-Ω\s]+$/.test(name)) {
+    } else if (!/^[a-zA-Zα-ωΑ-ΩάέήίύϋΐόώΆΈΉΊΎΪΌΏ\s]+$/.test(name)) {
         showError(document.forms["adoptionForm"]["name"], "Εισάγετε έγκυρο όνομα.", "nameError");
         return false;    
     } else if (name.length < 2) {
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (surname == "") {
         showError(document.forms["adoptionForm"]["surname"], "Εισάγετε επίθετο.", "surnameError");
         return false;
-    } else if (!/^[a-zA-Zα-ωΑ-Ω\s]+$/.test(surname)) {
+    } else if (!/^[a-zA-Zα-ωΑ-ΩάέήίύϋΐόώΆΈΉΊΎΪΌΏ\s]+$/.test(surname)) {
         showError(document.forms["adoptionForm"]["surname"], "Εισάγετε έγκυρο επίθετο.", "surnameError");
         return false;    
     } else if (surname.length < 2) {
@@ -125,8 +125,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (address == "") {
         showError(document.forms["adoptionForm"]["address"], "Εισάγετε μία διεύθυνση κατοικίας.", "addressError");
         return false;
-    } else if (!/^[a-zA-Z\p{L}0-9\s]+$/
-    .test(address)) {
+    } else if (!/^[\p{L}0-9\s]+$/u.test(address)) {
         showError(document.forms["adoptionForm"]["address"], "Εισάγετε έγκυρη διεύθυνση κατοικίας.", "addressError");
         return false;    
     } else if (address.length < 5) {
