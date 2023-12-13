@@ -25,7 +25,8 @@
         απαντήσουμε το συντομότερο δυνατό. Εναλλακτικά, μπορείτε να συμπληρώσετε
         τη παρακάτω φόρμα επικοινωνίας.
       </h3>
-      <form id="contactForm" onsubmit="return validateForm(event)">
+      <form id="contactForm" action="send_email.php" method="post" onsubmit="return validateForm(event)">
+         
         <h2>Φόρμα επικοινωνίας</h2>
         <div class="form-group">
           <label for="name">Ονοματεπώνυμο*</label>
@@ -36,7 +37,7 @@
       <div class="form-group">
           <label for="email">Διεύθυνση email*</label>
           <div id="emailError" class="error-message"></div>
-          <input name="email" type="text" class="feedback-input" placeholder="Διεύθυνση email" />
+          <input name="email" type="email" class="feedback-input" placeholder="Διεύθυνση email" />
       </div>
   
       <div class="form-group">

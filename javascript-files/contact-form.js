@@ -40,8 +40,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-// Function to validate the contact form
-function validateForm(event) {
+  // Function to validate the contact form
+  function validateForm(event) {
     event.preventDefault(); // Prevent the form from submitting by default
 
     var name = document.forms["contactForm"]["name"].value;
