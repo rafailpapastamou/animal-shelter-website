@@ -57,6 +57,8 @@ The Database code is available [here](https://github.com/rafailpapastamou/animal
 - CSS
 - JavaScript
 - PHP
+- [SMTPJS](https://smtpjs.com/)
+- [Elastic Email](https://elasticemail.com/)
 
 ## What isn't finished but we would like to do
 

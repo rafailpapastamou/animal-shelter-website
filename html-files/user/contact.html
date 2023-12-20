@@ -12,6 +12,8 @@
     <!-- Enabling the navbar -->
     <script src="../../javascript-files/navbar.js"></script>
     <script src="../../javascript-files/contact-form.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    
         <link rel="stylesheet" type="text/css" href="../../css-files/contact-form.css" />
   </head>
   <body>
@@ -25,7 +27,7 @@
         απαντήσουμε το συντομότερο δυνατό. Εναλλακτικά, μπορείτε να συμπληρώσετε
         τη παρακάτω φόρμα επικοινωνίας.
       </h3>
-      <form id="contactForm" action="send_email.php" method="post" onsubmit="return validateForm(event)">
+      <form id="contactForm" onsubmit="event.preventDefault(); validateForm(event);">
          
         <h2>Φόρμα επικοινωνίας</h2>
         <div class="form-group">

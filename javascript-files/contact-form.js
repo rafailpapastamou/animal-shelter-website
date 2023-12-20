@@ -82,13 +82,13 @@ document.addEventListener("DOMContentLoaded", function () {
         return false;
     }
 
+    // Call the function to send the email
+    sendEmail(name, email, message);
+
     // Clear the form fields
     document.forms["contactForm"]["name"].value = "";
     document.forms["contactForm"]["email"].value = "";
     document.forms["contactForm"]["text"].value = "";
-
-    // Show a success message
-    alert("Το μήνυμά σας στάλθηκε με επιτυχία. Θα σας απαντήσουμε το συντομότερο δυνατό.");
 
     return true;
 }
@@ -103,4 +103,17 @@ function resetStyles(element, errorId) {
 function showError(element, errorMessage, errorId) {
     element.style.borderColor = "red";
     document.getElementById(errorId).innerHTML = errorMessage;
+}
+
+// Function to send the email
+function sendEmail(name, email, message){
+  Email.send({
+    SecureToken: "d1379b88-7c96-4fd2-8a58-60883cb9531f",
+    To : 'animal.shelter.lab2324@gmail.com',
+    From : 'animal.shelter.lab2324@gmail.com',
+    Subject : "Νέο μήνυμα μέσω της φόρμας επικοινωνίας",
+    Body: "Ονοματεπώνυμο: " + name + "<br>Διεύθυνση email: " + email + "<br>Μήνυμα: " + message
+}).then(
+message => alert("Το μήνυμά σας στάλθηκε επιτυχώς! Θα επικοινωνήσουμε μαζί σας το συντομότερο δυνατό.")
+);
 }
