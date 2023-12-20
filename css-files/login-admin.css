@@ -10,7 +10,7 @@
   max-width: 360px;
   margin: 0 auto 100px;
   padding: 45px;
-  text-align: center;
+  text-align: left;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 .form input {
@@ -93,4 +93,16 @@ body {
   font-family: "Poppins", sans-serif, "arial";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@media screen and (max-width: 480px) {
+  .login-page {
+    width: 100%;
+    padding: 8% 10px 0; /* Adjust the padding as needed */
+  }
+  .form {
+    max-width: 100%;
+    padding: 20px; /* Adjust the padding as needed for the smaller box */
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.24); /* Adjust the box-shadow as needed */
+  }
 }
