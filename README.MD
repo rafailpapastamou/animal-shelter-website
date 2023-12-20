@@ -27,7 +27,7 @@ The page where animals up for adoption are shown
 <br>
 The page where the user can apply for an adoption, creating an adoption request
 <div style="display: flex; justify-content: space-between;">
-  <img src="" width="100%">
+  <img src="https://github.com/rafailpapastamou/animal-shelter-website/blob/main/screenshots/adoption.jpg" width="100%">
 </div>
 <br>
 The information page, showing the project team<br>
