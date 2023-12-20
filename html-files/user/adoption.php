@@ -46,7 +46,12 @@
           $result = mysqli_query($con, $query);
           if ($result && mysqli_num_rows($result) > 0) {
             while ($row = mysqli_fetch_assoc($result)) {
-              echo "<option value=\"" . $row['ANIMAL_ID'] . "\">" . $row['ANIMAL_ID'] . ". " . $row['NAME'] . ": " . $row['SPECIES'] . ", " . $row['SEX'] . "</option>";
+              if ($row['SEX'] == 'M') {
+                $gender = "Αρσενικό";
+              } elseif ($row['SEX'] == 'F') {
+                $gender = "Θυληκό";
+              }
+              echo "<option value=\"" . $row['ANIMAL_ID'] . "\">" . $row['ANIMAL_ID'] . ". " . $row['NAME'] . ": " . $row['SPECIES'] . ", " . $gender . "</option>";
             }
           } else {
             echo "0 results !!";
