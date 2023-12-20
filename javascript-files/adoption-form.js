@@ -128,13 +128,14 @@ document.addEventListener("DOMContentLoaded", function () {
     if (address == "") {
         showError(document.forms["adoptionForm"]["address"], "Εισάγετε μία διεύθυνση κατοικίας.", "addressError");
         return false;
-    } else if (!/^[\p{L}0-9\s,]+$/u.test(address)) {
+    } else if (!/^[\w\s,Α-Ωα-ωάέήίύϋΐόώΆΈΉΊΎΪΌΏ]+$/.test(address)) {
         showError(document.forms["adoptionForm"]["address"], "Εισάγετε έγκυρη διεύθυνση κατοικίας.", "addressError");
         return false;    
     } else if (address.length < 5) {
         showError(document.forms["adoptionForm"]["address"], "Η διεύθυνση κατοικίας πρέπει να έχει τουλάχιστον 5 χαρακτήρες.", "addressError");
         return false;
-    }    
+    }
+      
     
     // // Clear the form fields
     // document.forms["adoptionForm"]["wantedAnimal"].value = "";
