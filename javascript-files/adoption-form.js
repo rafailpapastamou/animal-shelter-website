@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (address == "") {
         showError(document.forms["adoptionForm"]["address"], "Εισάγετε μία διεύθυνση κατοικίας.", "addressError");
         return false;
-    } else if (!/^[\p{L}0-9\s]+$/u.test(address)) {
+    } else if (!/^[\p{L}0-9\s,]+$/u.test(address)) {
         showError(document.forms["adoptionForm"]["address"], "Εισάγετε έγκυρη διεύθυνση κατοικίας.", "addressError");
         return false;    
     } else if (address.length < 5) {
