@@ -24,7 +24,7 @@
 
       <h3 class="animalShelterInfoText"></h3>
 
-      <h3 class="animalShelterInfoText"><a href="../../html-files/user/animals.html" class="link">Δες τη λίστα</a>
+      <h3 class="animalShelterInfoText"><a href="../../html-files/user/animals.php" class="link">Δες τη λίστα</a>
         με τα ζωάκια που χρειάζονται τη βοήθειά σου και μόλις αποφασίσεις για
         ποιον τετράποδο φίλο ενδιαφέρεσαι, συμπλήρωσε μία αίτηση για υιοθεσία. </h3>
 
