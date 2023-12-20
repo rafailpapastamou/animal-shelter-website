@@ -1,11 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
     var adoptionForm = document.getElementById("adoptionForm");
+    var formSubmitted = false; // Adding this flag so the browser alert is not shown when the user presses the submit button
     
     // Add event listener to the form
     adoptionForm.addEventListener("submit", function (event) {
-      if (!validateForm()) {
+      if (!validateForm(event)) {
         // If form validation fails, prevent form submission
         event.preventDefault();
+      }
+      else {
+        formSubmitted = true;
       }
     });
   
@@ -25,33 +29,32 @@ document.addEventListener("DOMContentLoaded", function () {
   
     // Add event listener to page refresh
     window.addEventListener("beforeunload", function (event) {
-      // Check if the form has any input values
-      if (
-        adoptionForm.elements["wantedAnimal"].value ||
-        adoptionForm.elements["name"].value ||
-        adoptionForm.elements["surname"].value ||
-        adoptionForm.elements["email"].value ||
-        adoptionForm.elements["phone"].value ||
-        adoptionForm.elements["address"].value ||
-        adoptionForm.elements["familyStatus"].value
-
-      ) {
+    // Check if the form has any input values
+    if (!formSubmitted &&
+        (adoptionForm.elements["wantedAnimal"].value ||
+         adoptionForm.elements["name"].value ||
+         adoptionForm.elements["surname"].value ||
+         adoptionForm.elements["email"].value ||
+         adoptionForm.elements["phone"].value ||
+         adoptionForm.elements["address"].value ||
+         adoptionForm.elements["familyStatus"].value)
+    ) {
         // Prompt the user before leaving the page
         var confirmation = window.confirm(
-          "Refreshing the page will delete the form data. Are you sure you want to proceed?"
+            "Refreshing the page will delete the form data. Are you sure you want to proceed?"
         );
-  
+
         if (!confirmation) {
-          // Cancel the page refresh if the user clicks "Cancel" in the confirmation dialog
-          event.preventDefault();
+            // Cancel the page refresh if the user clicks "Cancel" in the confirmation dialog
+            event.preventDefault();
         }
-      }
+    }
     });
   });
 
     // Function to validate the adoption form
     function validateForm(event) {
-    event.preventDefault(); // Prevent the form from submitting by default
+    //event.preventDefault(); // Prevent the form from submitting by default
 
     var wantedAnimal = document.forms["adoptionForm"]["wantedAnimal"].value
     var name = document.forms["adoptionForm"]["name"].value;
@@ -133,19 +136,14 @@ document.addEventListener("DOMContentLoaded", function () {
         return false;
     }    
     
-    // Clear the form fields
-    document.forms["adoptionForm"]["wantedAnimal"].value = "";
-    document.forms["adoptionForm"]["name"].value = "";
-    document.forms["adoptionForm"]["surname"].value = "";
-    document.forms["adoptionForm"]["email"].value = "";
-    document.forms["adoptionForm"]["phone"].value = "";
-    document.forms["adoptionForm"]["address"].value = "";
-    document.forms["adoptionForm"]["familyStatus"].value = "";
-
-    sendFormDataToServer();
-
-    // Show a success message
-    alert("Η αίτησή σας για υιοθεσία υποβλήθηκε επιτυχώς. Θα έρθουμε σε επικοινωνία μαζί σας το συντομότερο δυνατό.");
+    // // Clear the form fields
+    // document.forms["adoptionForm"]["wantedAnimal"].value = "";
+    // document.forms["adoptionForm"]["name"].value = "";
+    // document.forms["adoptionForm"]["surname"].value = "";
+    // document.forms["adoptionForm"]["email"].value = "";
+    // document.forms["adoptionForm"]["phone"].value = "";
+    // document.forms["adoptionForm"]["address"].value = "";
+    // document.forms["adoptionForm"]["familyStatus"].value = "";
 
     return true;
 }

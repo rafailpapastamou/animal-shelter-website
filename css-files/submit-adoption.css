@@ -1,0 +1,24 @@
+#content {
+  text-align: center;
+}
+
+#content p {
+  font-family: "Poppins", sans-serif, "arial";
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+#statusImage {
+  width: 100px; /* Adjust image width as needed */
+  height: 100px; /* Adjust image height as needed */
+  margin-top: 40px; /* Adjust margin as needed */
+}
+
+@media screen and (max-width: 654px) {
+  #content p {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+}
