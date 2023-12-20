@@ -14,6 +14,8 @@ This university project, part of the 'Databases' course, involves creating a dat
 
 ## Screenshots
 
+### Desktop Screenshots
+
 The homepage of the website
 
 <div style="display: flex; justify-content: space-between;">
@@ -22,7 +24,7 @@ The homepage of the website
 <br>
 The page where animals up for adoption are shown
 <div style="display: flex; justify-content: space-between;">
-  <img src="" width="100%">
+  <img src="https://github.com/rafailpapastamou/animal-shelter-website/blob/main/screenshots/animals.jpg" width="100%">
 </div>
 <br>
 The page where the user can apply for an adoption, creating an adoption request
@@ -38,6 +40,29 @@ The information page, showing the project team<br>
 The contact page, where the user can send a message to the animal shelter<br>
 <div style="display: flex; justify-content: space-between;">
   <img src="https://github.com/rafailpapastamou/animal-shelter-website/blob/main/screenshots/contact.jpg" width="100%">
+</div>
+
+### Mobile Screenshots
+
+#### Our website is made for mobile use too
+
+The homepage of the website and the mobile navigation bar
+
+<div style="display: flex; justify-content: space-between;">
+  <img src="https://github.com/rafailpapastamou/animal-shelter-website/blob/main/screenshots/mobile-screenshots/mobile-index.jpg" width="30%">
+  <img src="https://github.com/rafailpapastamou/animal-shelter-website/blob/main/screenshots/mobile-screenshots/mobile-navigation-bar.jpg" width="30%">
+</div>
+<br>
+The animals page and the adoption page
+<div style="display: flex; justify-content: space-between;">
+  <img src="https://github.com/rafailpapastamou/animal-shelter-website/blob/main/screenshots/mobile-screenshots/mobile-animals.jpg" width="30%">
+  <img src="https://github.com/rafailpapastamou/animal-shelter-website/blob/main/screenshots/mobile-screenshots/mobile-adoption.jpg" width="30%">
+</div>
+<br>
+The info page and the contact page
+<div style="display: flex; justify-content: space-between;">
+  <img src="https://github.com/rafailpapastamou/animal-shelter-website/blob/main/screenshots/mobile-screenshots/mobile-info.jpg" width="30%">
+  <img src="https://github.com/rafailpapastamou/animal-shelter-website/blob/main/screenshots/mobile-screenshots/mobile-contact.jpg" width="30%">
 </div>
 
 ## Website Link
