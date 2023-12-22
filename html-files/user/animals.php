@@ -61,7 +61,7 @@
           if ($row['SEX'] == 'M') {
             echo "Αρσενικό";
           } elseif ($row['SEX'] == 'F') {
-            echo "Θυληκό";
+            echo "Θηλυκό";
           }
           echo "</td>";
 
