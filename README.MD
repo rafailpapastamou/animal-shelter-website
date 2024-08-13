@@ -17,7 +17,6 @@ This university project, part of the 'Databases' course, involves creating a dat
 ### Desktop Screenshots
 
 The homepage of the website
-
 <div style="display: flex; justify-content: space-between;">
   <img src="https://github.com/rafailpapastamou/animal-shelter-website/blob/main/screenshots/Index.jpg" width="100%">
 </div>
@@ -47,7 +46,6 @@ The contact page, where the user can send a message to the animal shelter<br>
 #### Our website is made for mobile use too
 
 The homepage of the website and the mobile navigation bar
-
 <div style="display: flex; justify-content: space-between;">
   <img src="https://github.com/rafailpapastamou/animal-shelter-website/blob/main/screenshots/mobile-screenshots/mobile-index.jpg" width="30%">
   <img src="https://github.com/rafailpapastamou/animal-shelter-website/blob/main/screenshots/mobile-screenshots/mobile-navigation-bar.jpg" width="30%">
